@@ -1,0 +1,78 @@
+form {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    z-index: 10;
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 4px rgba(0, 91, 187, 0.3);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #003e8c;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Compact select options */
+select {
+    background-color: #fff;
+    color: #333;
+    font-size: 0.9rem;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        max-width: 90%;
+        margin: 10px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,56 @@
+.dashboard-container {
+    display: grid;
+    grid-template-areas:
+        "task-trend button-container"
+        "task-list button-container";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chart-container {
+    grid-area: task-trend;
+    width: 100%;
+    max-width: 600px;
+}
+
+.task-list-container {
+    grid-area: task-list;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-container {
+    grid-area: button-container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-sort-container {
+    display: flex;
+    gap: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
